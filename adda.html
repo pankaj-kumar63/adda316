@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Oswald', sans-serif;
+            color: white;
+            background-size: 100% 114%;
+            background-image: url('img/img9.jpg');
+            filter: invert(100%);
+            background-repeat: no-repeat;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .left {
+            position: absolute;
+            left: 34px;
+            top: 22px;
+            display: inline-block;
+            /* border: 1px solid red; */
+        }
+
+        .mid {
+            display: block;
+            width: fit-content;
+            margin: 22px auto;
+            /* border: 1px solid green; */
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 22px;
+            display: inline-block;
+            border: 1px solid blue;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+
+        }
+
+        .navbar li a {
+            font-size: 19px;
+            color: #fdfdfd;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navabar li a.active {
+            text-decoration: underline;
+            color: grey;
+
+        }
+
+        .left img {
+            width: 142px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            color: rgb(16, 200, 255);
+            line-height: 19px;
+            font-size: 26px;
+            text-align: center;
+        }
+
+        .btn {
+            font-family: 'Oswald', sans-serif;
+            padding: 16px 23px;
+            background-color: #e9d6d6;
+            color: #fc1c1c;
+            border: 2px solid green;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color:black;
+        }
+
+        .hola {
+            border: 1px solid white;
+            width: 25%;
+            margin: -69px 2px;
+            padding: 75px;
+            border-radius: 20px;
+        }
+
+        .form-group input {
+            width: 70%;
+            display: block;
+            margin: 4px auto;
+            padding: 2px;
+            text-align: center;
+            border: 2px solid blue;
+            border-radius: 15px;
+            font-size: 18px;
+            font-family: 'Inconsolata', monospace;
+        }
+
+        .hola h1 {
+            text-align: center;
+        }
+
+        .hola button {
+            width: 303px;
+            display: block;
+            margin: 23px auto;
+            text-align: center;
+
+        }
+
+        /* .hola a{
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+        }
+        .hola a:hover{
+            background-color: gray;
+            text-decoration: underline;
+        }
+         */
+        .navbar div a {
+            color: #e45a5a;
+            display: block;
+            /* border: 2px solid green; */
+            margin: 19px 24%;
+            width: 85%;
+            text-align: center;
+        }
+
+        .image {
+            color: white;
+            position: absolute;
+            right: -359px;
+            top: 58%;
+            width: 7%;
+            /* border: 4px solid white;
+            border-radius: 10px; */
+            margin: -124px 466px;
+            padding: 29px;
+        }
+       .left .cool{
+            font-size: 16px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/img12.png" alt="">
+            <div>#ADDA316</div>
+            <div class="cool">Power</div>
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="https://dev-lovedeep.github.io/35_days_of_code/day3/index.html">Adda Members</a></li>
+                <li><a href="">Contact us</a></li>
+                <div>
+                    <li><a href="https://571sanyam.github.io/for-ADDA/adda.html">Click here to check adda members</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">E-mail us</button>
+        </div>
+    </header>
+    <div class="hola">
+        <!-- <a href="#">click to check the members of adda</a> -->
+        <h1>Join the ADDA Group now! </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Facebook link">
+            </div>
+            <div class="form-group">
+                <div>
+                    <input type="text" name="" placeholder="Enter your Insta id">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Speciality">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Contact Number">
+                    <button class="btn">
+                        submit
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <div class="image">
+        दोस्ती तो जिंदगी का एक खूबसूरत लम्हा है,
+        जिसका अंदाज सब रिश्ते से अलबेला है,
+        जिसे मिल जाए वह तन्हाई मे भी खुशी है,
+        और जिसे ना मिले तो वो भीड मे भी अकेला है!!
+    </div>
+
+</body>
+
+</html>
