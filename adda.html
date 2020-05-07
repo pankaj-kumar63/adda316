@@ -189,37 +189,48 @@
     <div class="hola">
         <!-- <a href="#">click to check the members of adda</a> -->
         <h1>Join the ADDA Group now! </h1>
-        <form action="noaction.php">
+        
             <div class="form-group">
-                <input type="text" name="" placeholder="Enter your name">
+                <input type="text" name="Name" placeholder="Enter your name" id="userFullName">
             </div>
             <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Facebook link">
+                <input type="text" name="Facebook" placeholder="Enter your Facebook link" id="userFacebook">
             </div>
             <div class="form-group">
                 <div>
-                    <input type="text" name="" placeholder="Enter your Insta id">
+                    <input type="text" name="Insta" placeholder="Enter your Insta id" id="userInsta">
                 </div>
                 <div class="form-group">
-                    <input type="text" name="" placeholder="Enter your Speciality">
+                    <input type="text" name="Special" placeholder="Enter your Speciality" id="userEmail">
                 </div>
                 <div class="form-group">
-                    <input type="text" name="" placeholder="Enter your Contact Number">
-                    <button class="btn">
+                    <input type="text" name="Contact" placeholder="Enter your Contact Number" id="userContact">
+                    <button class="btn" id="submit">
                         submit
                     </button>
                 </div>
             </div>
 
-        </form>
+        
     </div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-storage.js"></script>
+<script src="text.js"></script>
+
+
     <div class="image">
         दोस्ती तो जिंदगी का एक खूबसूरत लम्हा है,
         जिसका अंदाज सब रिश्ते से अलबेला है,
         जिसे मिल जाए वह तन्हाई मे भी खुशी है,
         और जिसे ना मिले तो वो भीड मे भी अकेला है!!
     </div>
-
+ 
 </body>
 
 </html>
