@@ -38,7 +38,7 @@
             right: 34px;
             top: 22px;
             display: inline-block;
-            border: 1px solid blue;
+            /* border: 1px solid blue; */
         }
 
         .navbar {
@@ -81,7 +81,7 @@
             padding: 16px 23px;
             background-color: #e9d6d6;
             color: #fc1c1c;
-            border: 2px solid green;
+            /* border: 2px solid green; */
             border-radius: 10px;
             font-size: 15px;
             cursor: pointer;
@@ -164,7 +164,7 @@
             body {
                 font-family: 'Oswald', sans-serif;
                 color: white;
-                background-size: 100% 114%;
+                background-size: 411px 733px;
                 background-image: url('img/img9.jpg');
                 filter: invert(100%);
                 background-repeat: no-repeat;
@@ -192,7 +192,7 @@
                 right: 55px;
                 top: 17px;
                 display: inline-block;
-                border: 1px solid blue;
+                /* border: 1px solid blue; */
             }
 
             .navbar {
@@ -219,7 +219,7 @@
             }
 
             .left img {
-                width: 142px;
+                width: 80px;
                 filter: invert(100%);
             }
 
@@ -235,7 +235,7 @@
                 padding: 0px 0px;
                 background-color: #e9d6d6;
                 color: #fc1c1c;
-                border: 2px solid green;
+                /* border: 2px solid green; */
                 border-radius: 10px;
                 font-size: 10px;
                 cursor: pointer;
@@ -343,30 +343,32 @@
     </header>
     <div class="hola">
         <!-- <a href="#">click to check the members of adda</a> -->
-        <h1>Join the ADDA Group now! </h1>
+        <form action="">
+            <h1>Join the ADDA Group now! </h1>
 
-        <div class="form-group">
-            <input type="text" name="Name" placeholder="Enter your name" id="userFullName">
-        </div>
-        <div class="form-group">
-            <input type="text" name="Facebook" placeholder="Enter your Facebook link" id="userFacebook">
-        </div>
-        <div class="form-group">
-            <div>
-                <input type="text" name="Insta" placeholder="Enter your Insta id" id="userInsta">
+            <div class="form-group">
+                <input type="text" name="Name" placeholder="Enter your name" id="userFullName">
             </div>
             <div class="form-group">
-                <input type="text" name="Special" placeholder="Enter your Speciality" id="userEmail">
+                <input type="text" name="Facebook" placeholder="Enter your Facebook link" id="userFacebook">
             </div>
             <div class="form-group">
-                <input type="text" name="Contact" placeholder="Enter your Contact Number" id="userContact">
-                <button class="btn" id="submit">
-                    submit
-                </button>
+                <div>
+                    <input type="text" name="Insta" placeholder="Enter your Insta id" id="userInsta">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="Special" placeholder="Enter your Speciality" id="userEmail">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="Contact" placeholder="Enter your Contact Number" id="userContact">
+                    <button class="btn" id="submit"type="reset">
+                        submit
+                        <!-- <input type="reset" value="Reset Form"> -->
+                    </button>
+                </div>
             </div>
-        </div>
 
-
+        </form>
     </div>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
