@@ -88,7 +88,7 @@
         }
 
         .btn:hover {
-            background-color:black;
+            background-color: black;
         }
 
         .hola {
@@ -154,9 +154,164 @@
             margin: -124px 466px;
             padding: 29px;
         }
-       .left .cool{
+
+        .left .cool {
             font-size: 16px;
             color: black;
+        }
+
+        @media(max-width: 800px) {
+            body {
+                font-family: 'Oswald', sans-serif;
+                color: white;
+                background-size: 100% 114%;
+                background-image: url('img/img9.jpg');
+                filter: invert(100%);
+                background-repeat: no-repeat;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .left {
+                position: absolute;
+                left: 34px;
+                top: 22px;
+                display: inline-block;
+                /* border: 1px solid red; */
+            }
+
+            .mid {
+                display: block;
+                width: fit-content;
+                margin: 6px 39px;
+                /* border: 1px solid green; */
+            }
+
+            .right {
+                position: absolute;
+                right: 55px;
+                top: 17px;
+                display: inline-block;
+                border: 1px solid blue;
+            }
+
+            .navbar {
+                display: inline-block;
+            }
+
+            .navbar li {
+                display: inline-block;
+
+            }
+
+            .navbar li a {
+                font-size: 10px;
+                color: #fdfdfd;
+                text-decoration: none;
+                padding: 14px 4px;
+            }
+
+            .navbar li a:hover,
+            .navabar li a.active {
+                text-decoration: underline;
+                color: grey;
+
+            }
+
+            .left img {
+                width: 142px;
+                filter: invert(100%);
+            }
+
+            .left div {
+                color: rgb(16, 200, 255);
+                line-height: 19px;
+                font-size: 10px;
+                text-align: center;
+            }
+
+            .btn {
+                font-family: 'Oswald', sans-serif;
+                padding: 0px 0px;
+                background-color: #e9d6d6;
+                color: #fc1c1c;
+                border: 2px solid green;
+                border-radius: 10px;
+                font-size: 10px;
+                cursor: pointer;
+            }
+
+            .btn:hover {
+                background-color: black;
+            }
+
+            .hola {
+                border: 1px solid white;
+                width: 25%;
+                margin: -69px 2px;
+                padding: 75px;
+                border-radius: 20px;
+            }
+
+            .form-group input {
+                width: 122%;
+                display: block;
+                margin: 4px auto;
+                padding: 2px;
+                text-align: center;
+                border: 2px solid blue;
+                border-radius: 15px;
+                font-size: 9px;
+                font-family: 'Inconsolata', monospace;
+            }
+
+            .hola h1 {
+                font-size: 15px;
+                text-align: center;
+            }
+
+            .hola button {
+                width: 98px;
+                display: block;
+                margin: 23px 21px;
+                text-align: center;
+
+            }
+
+            /* .hola a{
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+        }
+        .hola a:hover{
+            background-color: gray;
+            text-decoration: underline;
+        }
+         */
+            .navbar div a {
+                color: #e45a5a;
+                display: block;
+                /* border: 2px solid green; */
+                margin: 33px 24%;
+                width: 72%;
+                text-align: center;
+            }
+
+            .image {
+                color: white;
+                position: absolute;
+                right: -359px;
+                top: 27%;
+                width: 25%;
+                margin: 23px 383px;
+                padding: 2px;
+            }
+
+            .left .cool {
+                font-size: 16px;
+                color: black;
+            }
         }
     </style>
 </head>
@@ -189,39 +344,39 @@
     <div class="hola">
         <!-- <a href="#">click to check the members of adda</a> -->
         <h1>Join the ADDA Group now! </h1>
-        
-            <div class="form-group">
-                <input type="text" name="Name" placeholder="Enter your name" id="userFullName">
-            </div>
-            <div class="form-group">
-                <input type="text" name="Facebook" placeholder="Enter your Facebook link" id="userFacebook">
-            </div>
-            <div class="form-group">
-                <div>
-                    <input type="text" name="Insta" placeholder="Enter your Insta id" id="userInsta">
-                </div>
-                <div class="form-group">
-                    <input type="text" name="Special" placeholder="Enter your Speciality" id="userEmail">
-                </div>
-                <div class="form-group">
-                    <input type="text" name="Contact" placeholder="Enter your Contact Number" id="userContact">
-                    <button class="btn" id="submit">
-                        submit
-                    </button>
-                </div>
-            </div>
 
-        
+        <div class="form-group">
+            <input type="text" name="Name" placeholder="Enter your name" id="userFullName">
+        </div>
+        <div class="form-group">
+            <input type="text" name="Facebook" placeholder="Enter your Facebook link" id="userFacebook">
+        </div>
+        <div class="form-group">
+            <div>
+                <input type="text" name="Insta" placeholder="Enter your Insta id" id="userInsta">
+            </div>
+            <div class="form-group">
+                <input type="text" name="Special" placeholder="Enter your Speciality" id="userEmail">
+            </div>
+            <div class="form-group">
+                <input type="text" name="Contact" placeholder="Enter your Contact Number" id="userContact">
+                <button class="btn" id="submit">
+                    submit
+                </button>
+            </div>
+        </div>
+
+
     </div>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
+    <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-storage.js"></script>
-<script src="text.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-storage.js"></script>
+    <script src="text.js"></script>
 
 
     <div class="image">
@@ -230,7 +385,7 @@
         जिसे मिल जाए वह तन्हाई मे भी खुशी है,
         और जिसे ना मिले तो वो भीड मे भी अकेला है!!
     </div>
- 
+
 </body>
 
 </html>
